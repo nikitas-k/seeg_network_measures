@@ -5,7 +5,7 @@ import networkx as nx
 import numpy as np
 
 __author__ = "Nikitas Koussis"
-__license__ = "CC-BY-NC-Clause"
+__license__ = "CC-BY-NC"
 __email__ = "nikitas.koussis@gmail.com"
 
 def linear_threshold(G, L, seeds, threshold=0.5):
