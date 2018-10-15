@@ -4,6 +4,10 @@ import copy
 import networkx as nx
 import numpy as np
 
+__author__ = "Nikitas Koussis"
+__license__ = "CC-BY-NC-Clause"
+__email__ = "nikitas.koussis@gmail.com"
+
 def linear_threshold(G, L, seeds, threshold=0.5):
     """Return the active nodes of each diffusion step by linear threshold model.
     Parameters
@@ -25,6 +29,8 @@ def linear_threshold(G, L, seeds, threshold=0.5):
     default value is given (1/in_degree)
     3. This model does not currently diffuse over a certain number of steps -
     it simply diffuses until it cannot activate any more regions.
+    4. 'Time' of diffusion is defined as the distance weight [L.edge(i,j)]
+    divided by the weighting of the 
     References
     ----------
     [1] Granovetter, Mark. Threshold models of collective behavior.
